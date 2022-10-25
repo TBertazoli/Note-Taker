@@ -1,24 +1,16 @@
 const router = require('express').Router();
-const {createNewNote, validateNote } = require('../../lib/notes');
+const {createNewNote, validateNote, deleteById } = require('../../lib/notes');
 const { notes } = require('../../db/db');
 
-// router.get("/animals", (req, res) => {
-//   let results = animals;
-//   if (req.query) {
-//     results= filterByQuery(req.query, results);
-//   }
-//   res.json(results);
-// });
+router.get("/notes", (req, res) => {
+  let results = notes;
+   res.json(results);
+});
 
-// router.get('/animals/:id', (req, res) => {
-//   const result = findById(req.params.id, animals);
-//   if (result) {
-//     res.json(result);
-//   } else {
-//     res.send(404);
-//   }
-    
-// });
+router.delete('/notes/:id', (req, res) => {
+  deleteById(req.params.id, notes);
+    res.status(200).send();
+});
 
 router.post('/notes', (req, res) => {
     console.log(notes)
