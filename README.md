@@ -38,7 +38,7 @@
 
    GitHub repository link: https://github.com/TBertazoli/Note-Taker
 
-   Heroku deployed link:      
+   Heroku deployed link:  https://note-tasker.herokuapp.com/    
    
    email: tatianabertazoli@gmail.com
     
