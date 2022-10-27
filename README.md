@@ -4,7 +4,7 @@
     
 
    ## Description
-   This project is an application called Note Taker. The application back end was written using Express.js where I used a JSON file to save and retrieve data. The application was deployed to Heroku. 
+   This project is an application called Note Tasker. The application back end was written using Express.js where I used a JSON file to save and retrieve data. The application was deployed to Heroku. 
     
    ## Table of contents
    - [Installation](#installation)
